@@ -1,37 +1,34 @@
-//排列问题 N
+//排列问题
 #include<bits/stdc++.h>
 using namespace std;
 
-void permute(string &str,int u,unordered_set<string>&set){
-    if(u==str.size()){
-        if(set.find(str)==set.end()){
-            cout<<str<<" ";
-            set.insert(str);
-        }
-        return;
+set<string> Set;
+
+void permute(string& str,int st=0){
+    if(st==str.size()){
+        // cout<<str<<" ";
+        Set.insert(str);
     }
 
-    sort(str.begin()+u,str.end());
-
-    for(int i=u;i<str.size();i++){
-        swap(str[u],str[i]);
-        permute(str,u+1,set);
-        swap(str[u],str[i]);
+    for(int i=st;i<str.size();i++){
+        swap(str[i],str[st]);
+        permute(str,st+1);
+        swap(str[i],str[st]);
     }
 }
 
 void work(){
     string str;
     cin>>str;
-    str.pop_back();
-    unordered_set<string> set;
-    permute(str,0,set);
+    str=str.substr(0,str.size()-1);//去掉,
+    sort(str.begin(),str.end());//按字典序排序
+    permute(str);
+    for(string _str:Set){
+        cout<<_str<<" ";
+    }
 }
 
 int main(){
     work();
     return 0;
 }
-
-
-
