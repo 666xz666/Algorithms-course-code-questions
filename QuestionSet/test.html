@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>
+        高级语言程序设计实践 </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="template/bs3/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="template/bs3/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="template/bs3/white.css">
+    <link rel="stylesheet" href="template/bs3/katex.min.css">
+    <link rel="stylesheet" href="template/bs3/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <!--数学公式js加载完毕-->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" href="./"><i class="icon-home"></i>高级语言程序设计实践</a>
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="faqs.php">
+                                <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> F.A.Qs</a>
+                        </li>
+
+                        <li><a href="contest.php"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                                Contest</a></li>
+
+                        <!--<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+	-->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle"
+                                data-toggle="dropdown"><span id="profile">Login</span><span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <script src="template/bs3/profile.php?profile_csrf=239136378"></script>
+                                <!--<li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- select language -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle"
+                                data-toggle="dropdown"><span id="profile">Language</span><span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="setlang.php?lang=cn">中文</a></li>
+                                <li><a href="setlang.php?lang=ug">ئۇيغۇرچە</a></li>
+                                <li><a href="setlang.php?lang=en">English</a></li>
+                                <li><a href="setlang.php?lang=fa">فارسی</a></li>
+                                <li><a href="setlang.php?lang=th">ไทย</a></li>
+                                <li><a href="setlang.php?lang=ko">한국어</a></li>
+                            </ul>
+                    </ul><!-- select language -->
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron"></div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <title>Problem E: algorithm-数据加密 </title>
+                <center>
+                    <h3>Problem E: algorithm-数据加密</h3>
+                    <center>
+                        <div align=right><sub>[Creator : <span id='creator'></span>]</sub></div>
+                        <center>
+                            <span class=green>Time Limit : </span><span><span fd='time_limit' pid='1055'  >1.000</span></span>
+                            sec&nbsp;&nbsp;<span class=green>Memory Limit : </span>128 MB<br><br><a
+                                class='btn btn-info btn-sm' href='submitpage.php?cid=1285&pid=4&langmask=2031540'
+                                role='button'>Submit</a><a class='btn btn-primary btn-sm' role='button'
+                                href='contest.php?cid=1285'>ProblemList</a>
+                            <div class='btn-group' role='group'><a class='btn btn-primary btn-sm' role='button'
+                                    href=status.php?problem_id=1055&jresult=4>Solved: 497</a><a
+                                    class='btn btn-primary btn-sm' role='button' href=status.php?problem_id=1055>Submit
+                                    Num: 1200</a><a class='btn btn-primary btn-sm' role='button'
+                                    href=problemstatus.php?id=1055>Statistics</a></div>
+                        </center>
+            </div>
+            <!--StartMarkForVirtualJudge-->
+            <div class="panel panel-body">
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <h4>
+                            Description </h4>
+                    </div>
+                    <div class='panel-body content'>
+                        密码学是研究编制密码和破译密码的技术科学。研究密码变化的客观规律，应用于编制密码以保守通信秘密的，称为编码学；应用于破译密码以获取通信情报的，称为破译学，总称密码学。密码是通信双方按约定的法则进行信息特殊变换的一种重要保密手段。依照这些法则，变明文为密文，称为加密变换；变密文为明文，称为脱密变换。密码在早期仅对文字或数码进行加、脱密变换，随着通信技术的发展，对语音、图像、数据等都可实施加、脱密变换。<br />
+现在要求你用下面给定的方法对数据实现加密。给定长度为n的字符串S（1&lt;=n&lt;=2000&#44;S中只有大写字母）作为明文，要求构造一个字符串T作为密文，起初T是一个空串，之后反复执行以下任意操作 <br />
+1.从S的头部删除一个字符，加入到T的尾部<br />
+2.从S的尾部删除一个字符，加入到T的尾部 <br />
+最后S会变成空串，T会变成一个长度为n的字符串作为密文。当然并非所有的构造方案都是符合条件的，我们要求构造出的密文T的字典序尽可能小，你能找出这个字典序最小的密文吗？ <br /> </div>
+                </div>
+
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <h4>
+                            Input </h4>
+                    </div>
+                    <div class='panel-body content'>
+                        <span>输入包含多组数据，每组数据占两行，第一行为一个整数n（1&lt;=n&lt;=2000）代表字符串S的长度，第二行为一个长度为n的字符串S代表明文，保证S中只有大写字母</span>
+                    </div>
+                </div>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <h4>
+                            Output </h4>
+                    </div>
+                    <div class='panel-body content'>
+                        <span>对每组数据，输出一行字符串，代表构造出的字典序最小的密文T</span>
+                    </div>
+                </div>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <h4>
+                            Sample Input
+                            <a href="javascript:CopyToClipboard($('#sampleinput').text())">Copy</a>
+                        </h4>
+                    </div>
+                    <div class='panel-body'>
+                        <pre class=content><span id="sampleinput" class=sampledata>6
+ACDBCB</span></pre>
+                    </div>
+                </div>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <h4>
+                            Sample Output <a href="javascript:CopyToClipboard($('#sampleoutput').text())">Copy</a>
+                        </h4>
+                    </div>
+                    <div class='panel-body'>
+                        <pre class=content><span id='sampleoutput' class=sampledata>ABCBCD</span></pre>
+                    </div>
+                </div>
+
+            </div>
+            <center>
+                <!--EndMarkForVirtualJudge-->
+                <div class='panel-footer'>
+                    <a class='btn btn-info btn-sm' href='submitpage.php?cid=1285&pid=4&langmask=2031540'
+                        role='button'>Submit</a>
+                </div>
+            </center>
+        </div>
+    </div>
+    <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="template/bs3/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="template/bs3/bootstrap.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+	 
+  	var msg="<marquee style='margin-top:10px' direction='left' scrollamount=3 scrolldelay=50 onMouseOver='this.stop()'"+
+      " onMouseOut='this.start()' class=toprow>"+"<h4>\r\n\t<span style=\"color:#E53333;\">\u6b22\u8fce\u8fdb\u5165\u4e2d\u56fd\u77ff\u4e1a\u5927\u5b66\u8ba1\u7b97\u673a\u5b66\u9662\u9ad8\u7ea7\u8bed\u8a00\u7a0b\u5e8f\u8bbe\u8ba1\u5b9e\u9a8c\u5e73\u53f0\uff01<\/span>\r\n<\/h4>"+"</marquee>";
+  	$(".jumbotron").prepend(msg);
+    
+  $("form").append("<div id='csrf' />");
+  $("#csrf").load("csrf.php");
+  $("body").append("<div id=footer class=center >GPLv2 licensed by <a href='https://github.com/zhblue/hustoj' >HUSTOJ</a> "+(new Date()).getFullYear()+" </div>");
+//  $("body").append("<center><sub><a target='_blank' href='https://github.com/zhblue/hustoj'><span class='glyphicon glyphicon-heart' aria-hidden='true'></span> Please give us a <span class='glyphicon glyphicon-star' aria-hidden='true'></span>Star @HUSTOJ Github!</a></sub></center>");  
+//  $("body").append("<div class=center > <img src='http://hustoj.com/wx.jpg' width='120px'><img src='http://hustoj.com/alipay.png' width='120px'><br> 欢迎关注微信公众号onlinejudge</div>");
+  
+  
+	
+  });
+
+$(".hint pre").each(function(){
+	var plus="<span class='glyphicon glyphicon-plus'>Click</span>";
+	var content=$(this);
+	$(this).before(plus);
+	$(this).prev().click(function(){
+		content.toggle();
+	});
+	
+});
+
+  console.log("If you want to change the appearance of the web pages, make a copy of bs3 under template directory.\nRename it to whatever you like, and change the $OJ_TEMPLATE value in db_info.inc.php\nAfter that modify files under your own directory .\n");
+  console.log("To enable mathjax in hustoj, check line 15 in /home/judge/src/web/template/bs3/js.php");
+function admin_mod(){
+	$("div[fd=source]").each(function(){
+		let pid=$(this).attr('pid');	
+		$(this).append("<span><span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span></span>");
+
+	});
+	$("span[fd=time_limit]").each(function(){
+		let sp=$(this);
+		let pid=$(this).attr('pid');	
+		$(this).dblclick(function(){
+			let time=sp.text();
+			console.log("pid:"+pid+"  time_limit:"+time);	
+			sp.html("<form onsubmit='return false;'><input type=hidden name='m' value='problem_update_time'><input type='hidden' name='pid' value='"+pid+"'><input type='text' name='t' value='"+time+"' selected='true' class='input-mini' size=2 ></form>");
+			let ipt=sp.find("input[name=t]");
+			ipt.focus();
+			ipt[0].select();
+			sp.find("input").change(function(){
+				let newtime=sp.find("input[name=t]").val();
+				$.post("admin/ajax.php",sp.find("form").serialize()).done(function(){
+					console.log("new time_limit:"+time);
+					sp.html(newtime);
+				});
+			
+			});
+		});
+
+	});
+}
+function problem_add_source(sp,pid){
+	console.log("pid:"+pid);
+	let p=$(sp).parent();
+	p.html("<form onsubmit='return false;'><input type='hidden' name='m' value='problem_add_source'><input type='hidden' name='pid' value='"+pid+"'><input type='text' class='input input-large' name='ns'></form>");
+	p.find("input").focus();
+	p.find("input").change(function(){
+		console.log(p.find("form").serialize());
+		let ns=p.find("input[name=ns]").val();
+		console.log("new source:"+ns);
+		$.post("admin/ajax.php",p.find("form").serialize());
+		p.parent().append("<span class='label label-success'>"+ns+"</span>");
+		p.html("<span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span>");
+	});
+}
+    </script>
+
+    <script>
+        function phpfm( pid ) {
+			//alert(pid);
+			$.post( "admin/phpfm.php", {
+				'frame': 3,
+				'pid': pid,
+				'pass': '',
+				'csrf': ''
+			}, function ( data, status ) {
+				if ( status == "success" ) {
+					document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+				}
+			} );
+		}
+
+		$( document ).ready( function () {
+			$( "#creator" ).load( "problem-ajax.php?pid=1055" );
+		} );
+		function CopyToClipboard (input) {
+			var textToClipboard = input;
+			 
+			var success = true;
+			if (window.clipboardData) { // Internet Explorer
+			    window.clipboardData.setData ("Text", textToClipboard);
+			}
+			else {
+				// create a temporary element for the execCommand method
+			    var forExecElement = CreateElementForExecCommand (textToClipboard);
+			 
+				    /* Select the contents of the element 
+					(the execCommand for 'copy' method works on the selection) */
+			    SelectContent (forExecElement);
+			 
+			    var supported = true;
+			 
+				// UniversalXPConnect privilege is required for clipboard access in Firefox
+			    try {
+				if (window.netscape && netscape.security) {
+				    netscape.security.PrivilegeManager.enablePrivilege ("UniversalXPConnect");
+				}
+			 
+				    // Copy the selected content to the clipboard
+				    // Works in Firefox and in Safari before version 5
+				success = document.execCommand ("copy", false, null);
+			    }
+			    catch (e) {
+				success = false;
+			    }
+			 
+				// remove the temporary element
+			    document.body.removeChild (forExecElement);
+			}
+			 
+			if (success) {
+			    alert ("The text is on the clipboard, try to paste it!");
+			}
+			else {
+			    alert ("Your browser doesn't allow clipboard access!");
+			}
+			}
+			 
+			function CreateElementForExecCommand (textToClipboard) {
+			var forExecElement = document.createElement ("pre");
+			    // place outside the visible area
+			forExecElement.style.position = "absolute";
+			forExecElement.style.left = "-10000px";
+			forExecElement.style.top = "-10000px";
+			    // write the necessary text into the element and append to the document
+			forExecElement.textContent = textToClipboard;
+			document.body.appendChild (forExecElement);
+			    // the contentEditable mode is necessary for the  execCommand method in Firefox
+			forExecElement.contentEditable = true;
+			 
+			return forExecElement;
+			}
+			 
+			function SelectContent (element) {
+			    // first create a range
+			var rangeToSelect = document.createRange ();
+			rangeToSelect.selectNodeContents (element);
+			 
+			    // select the contents
+			var selection = window.getSelection ();
+			selection.removeAllRanges ();
+			selection.addRange (rangeToSelect);
+			}
+    </script>
+
+</body>
+
+</html>
+<!--not cached-->

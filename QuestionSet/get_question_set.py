@@ -14,16 +14,6 @@ def html_to_md(source_path,target_path):
     with open(target_path, 'w') as f:
         f.write(text)
         
-        
-# url = '你想要爬取的网页链接'
-# response = requests.get(url)
-# soup = BeautifulSoup(response.text, 'html.parser')
-
-# # 假设我们想要爬取所有的段落
-# paragraphs = soup.find_all('p')
-# md_content = ''
-# for p in paragraphs:
-#     md_content += p.get_text() + '\n\n'
-        
-def get_html():
-    pass
+if __name__ == '__main__':
+    html_to_md('test.html','3-E.md')
+    
